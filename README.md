@@ -1,21 +1,13 @@
-# MTSSH C# 
-# SPANISH 
+# MTSSH C#
+(**Multi Terminal SSH** )
 <br><br>
-MULTI TERMINAL SSH   - MTSSH C#
-<br>  
+
+MTSSH es una aplicacion super sencilla que permite tener varias ventanas putty en un mismo entorno controlado de trabajo.
+
+Permite tener centralizado en una sola ventana los SSH que puedan entrar dependiendo la necesidad que se puede minimizar, maximizar, cambiar de tamaño o de ventana fácilmente.
+
 Previamente debe tener descargado putty.exe<br>
 
-Es una APP que permite tener varias ventanas putty en un mismo entorno controlado de trabajo, mantiene ordenado el escritorio 
+Se encuentra desarrollado en C# - Visual Studio 2019
 
-Esta desarrollado en C# - Visual Studio 2019
-
-# ENGLISH
-
-SSH Multi Terminal
-
-You must have previously downloaded putty.exe
-
-It is an application that allows to have several putty windows in the same controlled work environment, keeps the desktop tidy
-
-It is developed in C # - Visual Studio 2019
 
