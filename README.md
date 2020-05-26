@@ -10,3 +10,26 @@ Previamente debe tener descargado putty.exe<br>
 
 Se encuentra desarrollado en C# - Visual Studio 2019
 
+<img
+src="images/ws01.JPG"
+raw=true
+alt="Workspace"
+style="margin-right: 10px;"
+/>
+
+
+<img
+src="images/ws03.JPG"
+raw=true
+alt="Workspace"
+style="margin-right: 10px;"
+/>
+
+
+<img
+src="images/workspaces.JPG"
+raw=true
+alt="Workspace"
+style="margin-right: 10px;"
+/>
+
