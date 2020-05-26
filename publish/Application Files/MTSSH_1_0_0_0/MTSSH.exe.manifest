@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MTSSH.exe" version="1.0.0.0" publicKeyToken="0571a75ad3ae8209" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MTSSH" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MTSSH.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Opciones del manifiesto UAC
+             Si quiere cambiar el nivel del Control de cuentas de usuario de Windows reemplace el 
+             nodo requestedExecutionLevel por uno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Especificar el elemento requestedExecutionLevel deshabilitará la virtualización de archivos y registros. 
+            Quite este elemento si la aplicación necesita esta virtualización para la compatibilidad
+            con versiones anteriores.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MTSSH.exe" size="275872">
+      <assemblyIdentity name="MTSSH" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tkh7ISijB/+SIEqXRQuowi5cEA8RMuiJS+upzezrN50=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Renci.SshNet.dll" size="422912">
+      <assemblyIdentity name="Renci.SshNet" version="2016.1.0.0" publicKeyToken="1CEE9F8BDE3DB106" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9jFe0UZDj3cCAzaBBD+P6WkO05oqvJoZIkZCSUSjono=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="logo.ico" size="111582">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5xU9pPqhV7nbah7ye+h3hpygJX6Do9RpWiCxCwk8miI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MTSSH.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Una lista de las versiones de Windows en la que se ha probado esta aplicación y
+           con la que se ha diseñado para que trabaje. Quite la marca de comentario de los elementos adecuados y Windows seleccionará 
+           automáticamente el entorno más compatible. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=MSI\sborja" issuerKeyHash="e90ce7b35b96fd1188fed4850c18f71073fdac81" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wSA5iW/K7vr61bmzN58z8UOnpr/3uvCtvGqQ6G1vvj8=</DigestValue></Reference></SignedInfo><SignatureValue>hZxeXGBR/JGJcRe9w5Pnz7P2uSTMaOktvMjJMpowNP9iImNgs1SQnISY81CBPD+oMuzkualLlAzCh7hLuUcetYq+17XoJmTZWDkT/+ba0loInCqOMvEpgqp4ePm4MuEONZbRliNat5GMmoOWPofEU2sFXjap5L/uoQ3DHJ0bKlg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3SAmgVOjAhCyGkXtMP5lqAqxehTZXYB1PTfDAqIWwu+5R/+wYOu1Az4tw17zbksS8SgyV9KF5pzeHF4vLyOVJ/T181MYTDKIrIeT+sxsxhHcoY8D8+C+/5VpWbvlsw5Rv/THPTQlGgnq66TqjluJMVgM/rqh4NMcPRwV0JjC+vk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3fbe6f6de8906abcadf0baf7bfa6a743f1339f37b3b9d5fafaeeca6f893920c1" Description="" Url=""><as:assemblyIdentity name="MTSSH.exe" version="1.0.0.0" publicKeyToken="0571a75ad3ae8209" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MSI\sborja</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>q69PnXkQ/8+CYzKgKWlTdMP3VwGTkKERJIhuXgqZv4A=</DigestValue></Reference></SignedInfo><SignatureValue>TcKEXkNCsn9NgNTF9JqpE4D8S798sSWpdpOU2HVb/FcMYjRXoy4INK/tGI8sdkqSwFzCcHDNhwHmwKHieb4uaL6qvq5yCgR0lqxaLbe51RCD6Z/7R8+RwxuMxoOGRPKIgBQDEwpqtgvx0WOuIG5zsiCO3ebJVMJA/vHeo+4mUFY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3SAmgVOjAhCyGkXtMP5lqAqxehTZXYB1PTfDAqIWwu+5R/+wYOu1Az4tw17zbksS8SgyV9KF5pzeHF4vLyOVJ/T181MYTDKIrIeT+sxsxhHcoY8D8+C+/5VpWbvlsw5Rv/THPTQlGgnq66TqjluJMVgM/rqh4NMcPRwV0JjC+vk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQQOmsY+BTlqhLEeyBDfo7xTANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQATQBTAEkAXABzAGIAbwByAGoAYTAeFw0xOTExMjMwMTQ5MTdaFw0yMDExMjIwNzQ5MTdaMB8xHTAbBgNVBAMeFABNAFMASQBcAHMAYgBvAHIAagBhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDdICaBU6MCELIaRe0w/mWoCrF6FNldgHU9N8MCohbC77lH/7Bg67UDPi3DXvNuSxLxKDJX0oXmnN4cXi8vI5Un9PXzUxhMMoish5P6zGzGEdyhjwPz4L7/lWlZu+WzDlG/9Mc9NCUaCerrpOqOW4kxWAz+uqHg0xw9HBXQmML6+QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIddOwGdrGF9rGj8TqQYt76UvDM0BlujpLja/KgLyZyybKjNuw+eU00AJ/A89yROqnkic7zPoxrGo26TcBjln3oNqkya9q/GHUi+inrgXMnwSEpVkDVTEjXphl6Tg7Cd/oOS/SWL7PNt4KpaJQsBfGknwpU35d0gEyXspfKpRQr6</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
