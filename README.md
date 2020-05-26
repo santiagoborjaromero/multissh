@@ -10,4 +10,3 @@ Previamente debe tener descargado putty.exe<br>
 
 Se encuentra desarrollado en C# - Visual Studio 2019
 
-
